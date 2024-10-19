@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="signup-container">
+            <h1>Sign Up</h1>
+            <p>Create your account. It’s free and only takes a minute!</p>
+            <form id="signupForm">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <small id="usernameError"></small>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <small id="emailError"></small>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Create Password" required>
+                    <small id="passwordError"></small>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <small id="confirmPasswordError"></small>
+                </div>
+                <div class="options">
+                  <!-- Forgot Password link -->
+<div class="options">
+    <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+</div>
+
+<!-- Modal for Forgot Password -->
+<div id="forgotPasswordModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Reset Password</h2>
+        <p>Please enter your email to reset your password:</p>
+        <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+        <button id="resetPasswordButton">Send Reset Link</button>
+        <small id="modalMessage"></small>
+    </div>
+</div>
+
+                </div>
+                <button type="submit">Sign Up</button>
+                <small id="successMessage"></small>
+            </form>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
